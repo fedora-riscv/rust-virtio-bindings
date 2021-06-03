@@ -6,7 +6,7 @@
 
 Name:           rust-%{crate}
 Version:        0.1.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Rust FFI bindings to virtio generated using bindgen
 
 # Upstream license specification: BSD-3-Clause OR Apache-2.0
@@ -17,7 +17,7 @@ Source:         %{crates_source}
 # * Exclude unneeded files
 Patch0:         virtio-bindings-fix-metadata.diff
 
-ExclusiveArch:  %{rust_arches}
+ExclusiveArch:  x86_64 aarch64 ppc64le
 %if %{__cargo_skip_build}
 BuildArch:      noarch
 %endif
@@ -98,5 +98,8 @@ which use "virtio-v5_0_0" feature of "%{crate}" crate.
 %endif
 
 %changelog
+* Thu Jun 03 2021 Sergio Lopez <slp@redhat.com> - 0.1.0-2
+- Exclude unsupported arches
+
 * Fri May 07 2021 Sergio Lopez <slp@redhat.com> - 0.1.0-1
 - Initial package
