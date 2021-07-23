@@ -6,7 +6,7 @@
 
 Name:           rust-%{crate}
 Version:        0.1.0
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        Rust FFI bindings to virtio generated using bindgen
 
 # Upstream license specification: BSD-3-Clause OR Apache-2.0
@@ -98,6 +98,9 @@ which use "virtio-v5_0_0" feature of "%{crate}" crate.
 %endif
 
 %changelog
+* Fri Jul 23 2021 Fedora Release Engineering <releng@fedoraproject.org> - 0.1.0-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_35_Mass_Rebuild
+
 * Thu Jun 03 2021 Sergio Lopez <slp@redhat.com> - 0.1.0-2
 - Exclude unsupported arches
 
