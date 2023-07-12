@@ -1,11 +1,11 @@
 diff --git a/Cargo.toml b/Cargo.toml
-index cbe749d..16104d0 100644
+index e1e3ce7..85f68af 100644
 --- a/Cargo.toml
 +++ b/Cargo.toml
-@@ -20,6 +20,7 @@ readme = "README.md"
+@@ -19,6 +19,7 @@ readme = "README.md"
  keywords = ["virtio"]
  license = "BSD-3-Clause OR Apache-2.0"
- repository = "https://github.com/rust-vmm/virtio-bindings"
+ repository = "https://github.com/rust-vmm/vm-virtio"
 +exclude = ["rust-vmm-ci/*", "/coverage_config.json"]
  
  [dependencies]
