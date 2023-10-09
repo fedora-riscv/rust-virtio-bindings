@@ -6,7 +6,7 @@
 
 Name:           rust-virtio-bindings
 Version:        0.2.1
-Release:        1%{?dist}
+Release:        1.rv64%{?dist}
 Summary:        Rust FFI bindings to virtio generated using bindgen
 
 License:        BSD-3-Clause OR Apache-2.0
@@ -18,7 +18,7 @@ Source2:        https://raw.githubusercontent.com/rust-vmm/vm-virtio/main/LICENS
 # * Exclude unneeded files
 Patch0:         virtio-bindings-fix-metadata.diff
 
-ExclusiveArch:  x86_64 aarch64 ppc64le
+ExclusiveArch:  x86_64 aarch64 ppc64le riscv64
 %if %{__cargo_skip_build}
 BuildArch:      noarch
 %endif
