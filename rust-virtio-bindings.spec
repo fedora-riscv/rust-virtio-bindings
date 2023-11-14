@@ -6,7 +6,7 @@
 
 Name:           rust-virtio-bindings
 Version:        0.2.1
-Release:        2%{?dist}
+Release:        %autorelease
 Summary:        Rust FFI bindings to virtio generated using bindgen
 
 License:        BSD-3-Clause OR Apache-2.0
@@ -104,28 +104,4 @@ cp %{SOURCE2} .
 %endif
 
 %changelog
-* Sat Jul 22 2023 Fedora Release Engineering <releng@fedoraproject.org> - 0.2.1-2
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_39_Mass_Rebuild
-
-* Wed Jul 12 2023 Sergio Lopez <slp@redhat.com> - 0.2.1-1
-- Update to version 0.2.1
-- Regenerate with rust2rpm 24
-- Add out-of-crate license files
-
-* Sat Jan 21 2023 Fedora Release Engineering <releng@fedoraproject.org> - 0.1.0-6
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_38_Mass_Rebuild
-
-* Sat Jul 23 2022 Fedora Release Engineering <releng@fedoraproject.org> - 0.1.0-5
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_37_Mass_Rebuild
-
-* Fri Jan 21 2022 Fedora Release Engineering <releng@fedoraproject.org> - 0.1.0-4
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_36_Mass_Rebuild
-
-* Fri Jul 23 2021 Fedora Release Engineering <releng@fedoraproject.org> - 0.1.0-3
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_35_Mass_Rebuild
-
-* Thu Jun 03 2021 Sergio Lopez <slp@redhat.com> - 0.1.0-2
-- Exclude unsupported arches
-
-* Fri May 07 2021 Sergio Lopez <slp@redhat.com> - 0.1.0-1
-- Initial package
+%autochangelog
